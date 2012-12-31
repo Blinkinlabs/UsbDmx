@@ -1989,19 +1989,6 @@ This is the standard 5.5mm barrel jack for power. The PTH is the most common, pr
 <description>Generated from &lt;b&gt;atmega32u4bb.sch&lt;/b&gt;&lt;p&gt;
 by exp-project-lbr.ulp</description>
 <packages>
-<package name="GLOWBOARD_ABMM2_CRYSTAL">
-<wire x1="-2.6" y1="-1.8" x2="-2.9" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="3.1" y1="1.8" x2="3.1" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="3.1" y1="-1.8" x2="-2.6" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="3.1" y1="1.8" x2="-2.9" y2="1.8" width="0.127" layer="51"/>
-<wire x1="-2.9" y1="1.8" x2="-2.9" y2="-1.5" width="0.127" layer="51"/>
-<smd name="P$1" x="-2.1" y="-1.2" dx="1.8" dy="1.4" layer="1"/>
-<smd name="P$2" x="2.3" y="-1.2" dx="1.8" dy="1.4" layer="1"/>
-<smd name="P$3" x="2.3" y="1.2" dx="1.8" dy="1.4" layer="1"/>
-<smd name="P$4" x="-2.1" y="1.2" dx="1.8" dy="1.4" layer="1"/>
-<text x="-3.1" y="2.2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.1" y="-3.5" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="ARDUINO_LEONARDO-REV3B_SMARTPRJ_TQFP44-PAD">
 <description>&lt;b&gt;44-lead Thin Quad Flat Package&lt;/b&gt;</description>
 <circle x="-4" y="4" radius="0.2827" width="0.254" layer="21"/>
@@ -2171,24 +2158,19 @@ by exp-project-lbr.ulp</description>
 <pad name="P$15" x="1.5" y="1.5" drill="0.508" rot="R270" stop="no" thermals="no"/>
 <smd name="EXP1" x="0" y="0" dx="4.826" dy="4.826" layer="16" roundness="10" stop="no" cream="no"/>
 </package>
+<package name="XS3225">
+<smd name="P$1" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="P$2" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="P$3" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="P$4" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<wire x1="-1.3" y1="-1.3" x2="1.7" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.7" y1="-1.3" x2="1.7" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.7" y1="1.3" x2="-1.7" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="1.3" x2="-1.7" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="-0.9" x2="-1.3" y2="-1.3" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
-<symbol name="GLOWBOARD_Q1">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<text x="-2.54" y="2.286" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-</symbol>
 <symbol name="ARDUINO_LEONARDO-REV3B_SMARTPRJ_ATMEGA32U4">
 <wire x1="-20.32" y1="25.4" x2="30.48" y2="25.4" width="0.254" layer="94"/>
 <wire x1="30.48" y1="25.4" x2="30.48" y2="-60.96" width="0.254" layer="94"/>
@@ -2242,25 +2224,24 @@ by exp-project-lbr.ulp</description>
 <text x="-20.32" y="-63.5" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-20.32" y="26.162" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="Q">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="GLOWBOARD_ABMM2" prefix="Q" uservalue="yes">
-<description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="GLOWBOARD_Q1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="GLOWBOARD_ABMM2_CRYSTAL">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ARDUINO_LEONARDO-REV3B_SMARTPRJ_ATMEGA32U4-XU">
 <gates>
 <gate name="G$1" symbol="ARDUINO_LEONARDO-REV3B_SMARTPRJ_ATMEGA32U4" x="0" y="0"/>
@@ -2372,6 +2353,23 @@ by exp-project-lbr.ulp</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CRYSTAL" prefix="Q" uservalue="yes">
+<description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XS3225">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -2407,7 +2405,6 @@ by exp-project-lbr.ulp</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun" deviceset="CAP" device="0805" value="16pf"/>
 <part name="C2" library="SparkFun" deviceset="CAP" device="0805" value="16pf"/>
-<part name="Q2" library="blinkyboard" deviceset="GLOWBOARD_ABMM2" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R4" library="SparkFun" deviceset="RESISTOR" device="" value="10K"/>
 <part name="X1" library="SparkFun" deviceset="USB" device="PTH"/>
@@ -2422,6 +2419,7 @@ by exp-project-lbr.ulp</description>
 <part name="C6" library="SparkFun" deviceset="CAP" device="0805" value="100nF"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
+<part name="Q1" library="blinkyboard" deviceset="CRYSTAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2475,7 +2473,6 @@ by exp-project-lbr.ulp</description>
 <instance part="GND1" gate="1" x="10.16" y="-22.86"/>
 <instance part="C1" gate="G$1" x="-17.78" y="45.72" rot="R90"/>
 <instance part="C2" gate="G$1" x="-17.78" y="35.56" rot="R90"/>
-<instance part="Q2" gate="G$1" x="-10.16" y="40.64" rot="R90"/>
 <instance part="GND5" gate="1" x="-25.4" y="30.48"/>
 <instance part="R4" gate="G$1" x="0" y="60.96" rot="R90"/>
 <instance part="X1" gate="G$1" x="-15.24" y="15.24" rot="R180"/>
@@ -2499,6 +2496,7 @@ by exp-project-lbr.ulp</description>
 </instance>
 <instance part="GND4" gate="1" x="-12.7" y="-25.4"/>
 <instance part="P+2" gate="VCC" x="-12.7" y="-7.62"/>
+<instance part="Q1" gate="G$1" x="-10.16" y="40.64" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2643,18 +2641,6 @@ by exp-project-lbr.ulp</description>
 <pinref part="U$1" gate="G$1" pin="(OC0B/SCL/INT0)PD0"/>
 <wire x1="73.66" y1="0" x2="76.2" y2="0" width="0.1524" layer="91"/>
 <label x="76.2" y="0" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="D4" class="0">
-<segment>
-<wire x1="157.48" y1="15.24" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
-<label x="157.48" y="20.32" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="167.64" y1="15.24" x2="167.64" y2="20.32" width="0.1524" layer="91"/>
-<label x="167.64" y="20.32" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -2820,22 +2806,24 @@ by exp-project-lbr.ulp</description>
 <segment>
 <wire x1="-15.24" y1="45.72" x2="-10.16" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="Q2" gate="G$1" pin="2"/>
-<junction x="-10.16" y="45.72"/>
 <pinref part="U$1" gate="G$1" pin="XTAL2"/>
 <wire x1="12.7" y1="45.72" x2="-10.16" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="43.18" x2="-10.16" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-10.16" y="45.72"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="Q2" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="35.56" x2="-10.16" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="35.56" x2="-5.08" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="35.56" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-10.16" y="35.56"/>
 <pinref part="U$1" gate="G$1" pin="XTAL1"/>
 <wire x1="-5.08" y1="40.64" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="38.1" x2="-10.16" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-10.16" y="35.56"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2871,6 +2859,30 @@ by exp-project-lbr.ulp</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="DEBUG1" gate="G$1" pin="A"/>
 <wire x1="167.64" y1="5.08" x2="167.64" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D9" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="(PCINT5/OC1A/#OC4B/ADC12)PB5"/>
+<wire x1="73.66" y1="53.34" x2="76.2" y2="53.34" width="0.1524" layer="91"/>
+<label x="76.2" y="53.34" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="157.48" y1="15.24" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
+<label x="157.48" y="20.32" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="D10" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="(PCINT6/OC1B/OC4B/ADC13)PB6"/>
+<wire x1="73.66" y1="55.88" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
+<label x="76.2" y="55.88" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="167.64" y1="15.24" x2="167.64" y2="20.32" width="0.1524" layer="91"/>
+<label x="167.64" y="20.32" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
