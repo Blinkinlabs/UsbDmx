@@ -1,0 +1,3 @@
+- Switch to BB8-style firmware. Send 512-byte (DMX-like) frames to the device in 64-byte chunks, which are then pushed over the line.
+- Can be DMX?
+

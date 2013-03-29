@@ -1,0 +1,7 @@
+For RevB:
+- drop power injector
+- add in-line power fuse like the Leonardo
+- hook status lines up to Arduino RX/TX (?)
+- Put status LEDs into ethernet connector?
+- Switch to ground-plane based design
+- Fit into a pre-made case?
