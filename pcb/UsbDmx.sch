@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2607,7 +2607,7 @@ by exp-project-lbr.ulp</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="blinkiverse">
+<library name="blinkinlabs">
 <description>Generated from &lt;b&gt;atmega32u4bb.sch&lt;/b&gt;&lt;p&gt;
 by exp-project-lbr.ulp</description>
 <packages>
@@ -2983,7 +2983,7 @@ by exp-project-lbr.ulp</description>
 <part name="U$2" library="sonos_library" deviceset="2X3HEADER" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="blinkiverse" deviceset="ARDUINO_LEONARDO-REV3B_SMARTPRJ_ATMEGA32U4-XU" device="MU"/>
+<part name="U$1" library="blinkinlabs" deviceset="ARDUINO_LEONARDO-REV3B_SMARTPRJ_ATMEGA32U4-XU" device="MU"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun" deviceset="CAP" device="0805" value="16pf"/>

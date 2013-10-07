@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -131,7 +131,7 @@
 <hole x="47.5" y="2.5" drill="3.2"/>
 <hole x="2.5" y="21.5" drill="3.2"/>
 <text x="48.5" y="12" size="1.27" layer="25" rot="R90" align="bottom-center">DMX via Cat5</text>
-<text x="3" y="12" size="1.27" layer="26" rot="MR270" align="bottom-center">blinkiverse.com</text>
+<text x="3" y="12" size="1.27" layer="26" rot="MR270" align="bottom-center">blinkinlabs.com</text>
 <text x="7" y="12" size="1.27" layer="26" rot="MR270" align="bottom-center">USB-DMX</text>
 </plain>
 <libraries>
@@ -354,7 +354,7 @@ by exp-project-lbr.ulp</description>
 </package>
 </packages>
 </library>
-<library name="blinkiverse">
+<library name="blinkinlabs">
 <description>Generated from &lt;b&gt;atmega32u4bb.sch&lt;/b&gt;&lt;p&gt;
 by exp-project-lbr.ulp</description>
 <packages>
@@ -444,7 +444,7 @@ by exp-project-lbr.ulp</description>
 <class number="2" name="motors" width="0.6096" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -627,7 +627,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="49.052" y="8.074" size="1.778" layer="27" rot="R90"/>
 </element>
 <element name="U$2" library="sonos_library" package="2X3HEADER" value="2X3HEADER" x="13" y="21" rot="R270"/>
-<element name="U$1" library="blinkiverse" package="ARDUINO_LEONARDO-REV3B_SMARTPRJ_QFN44ML7X7" value="ARDUINO_LEONARDO-REV3B_SMARTPRJ_ATMEGA32U4-XUMU" x="19.15" y="10" smashed="yes"/>
+<element name="U$1" library="blinkinlabs" package="ARDUINO_LEONARDO-REV3B_SMARTPRJ_QFN44ML7X7" value="ARDUINO_LEONARDO-REV3B_SMARTPRJ_ATMEGA32U4-XUMU" x="19.15" y="10" smashed="yes"/>
 <element name="C1" library="SparkFun" package="0805" value="16pf" x="15" y="2.25" smashed="yes"/>
 <element name="C2" library="SparkFun" package="0805" value="16pf" x="21.5" y="3" smashed="yes" rot="R90"/>
 <element name="R4" library="SparkFun" package="0805" value="10K" x="10.75" y="2.25" smashed="yes" rot="R180"/>
