@@ -1,0 +1,14 @@
+For RevB:
+x-drop power injector (skipped, still need it)
+x-Switch to ground-plane based design
+x-Fix RJ45 connector layout
+x-Make board larger to make space for mounting holes
+x-Switch to 0603 components, 2520 crystal
+x-switch to longpads version of processor for easier assembly
+x-hook status lines up to Arduino RX/TX (skipped, don’t care)
+x-Move ICSP header so it doesn’t conflict with USB
+
+For RevC:
+-add in-line power fuse like the Leonardo
+-Fit into a pre-made case?
+-Put status LEDs into ethernet connector?
